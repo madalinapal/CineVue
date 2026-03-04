@@ -5,10 +5,10 @@
 **Faculty:** Automatic Control and Computer Science  
 **Course:** Database Systems Project (2026)
 
-## 📝 Project Overview
+## Project Overview
 CineVue is a full-stack web application designed for managing movie theater operations and online ticket bookings. The project demonstrates the implementation of a relational database in a real-world scenario, covering everything from complex SQL queries to a modern reactive user interface.
 
-## 🚀 Tech Stack
+## Tech Stack
 
 ### Frontend
 - **Vue.js 3** (Composition API) - For a dynamic and responsive UI.
@@ -26,7 +26,7 @@ CineVue is a full-stack web application designed for managing movie theater oper
 - **MySQL Workbench** - Used for E-R diagram design and schema modeling.
 
 
-## 📊 Database Architecture
+## Database Architecture
 The application is built on a normalized relational schema to ensure data consistency and referential integrity.
 
 ### Key Entities:
@@ -36,14 +36,14 @@ The application is built on a normalized relational schema to ensure data consis
 - **Users:** Role-based system (Admin vs. Client).
 
 
-## ✨ Key Features
+## Key Features
 
-### 👤 For Customers:
+### For Customers:
 * **Browse Movies:** View the current lineup with high-quality posters and details.
 * **Smart Booking:** Real-time seat availability check and ticket purchasing.
 * **Account Management:** Access to personal booking history and profile details.
 
-### 🔐 For Administrators:
+### For Administrators:
 * **Content Management:** Full CRUD operations for movies, halls, and projections.
 * **Advanced Analytics:** SQL-driven reports on ticket sales and popular screenings.
 * **System Integrity:** Foreign key constraints to prevent orphaned data (e.g., blocking movie deletion if active projections exist).
