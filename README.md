@@ -1,66 +1,49 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# CineVue - Cinema Ticket Reservation System
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+**Author:** Mădălina-Ioana Palade  
+**University:** National University of Science and Technology Politehnica Bucharest  
+**Faculty:** Automatic Control and Computer Science  
+**Course:** Database Systems Project (2026)
 
-## About Laravel
+## 📝 Project Overview
+CineVue is a full-stack web application designed for managing movie theater operations and online ticket bookings. The project demonstrates the implementation of a relational database in a real-world scenario, covering everything from complex SQL queries to a modern reactive user interface.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## 🚀 Tech Stack
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+### Frontend
+- **Vue.js 3** (Composition API) - For a dynamic and responsive UI.
+- **Vue Router** - Managing Single Page Application (SPA) navigation.
+- **Vite** - Next-generation frontend tooling.
+- **Axios** - Handling asynchronous API requests.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+### Backend
+- **Laravel 10** (PHP) - Providing a robust RESTful API.
+- **Laravel Sanctum** - Secure token-based authentication.
+- **Eloquent ORM** - For intuitive database interactions.
 
-## Learning Laravel
+### Database
+- **MySQL 8.0** - Core relational database management system.
+- **MySQL Workbench** - Used for E-R diagram design and schema modeling.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+## 📊 Database Architecture
+The application is built on a normalized relational schema to ensure data consistency and referential integrity.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+### Key Entities:
+- **Movies (`filme`):** Detailed information including duration and poster paths.
+- **Projections (`proiectii`):** Linking movies to specific halls, dates, and pricing.
+- **Tickets (`bilete`):** Managing seat reservations and client associations.
+- **Users:** Role-based system (Admin vs. Client).
 
-## Laravel Sponsors
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+## ✨ Key Features
 
-### Premium Partners
+### 👤 For Customers:
+* **Browse Movies:** View the current lineup with high-quality posters and details.
+* **Smart Booking:** Real-time seat availability check and ticket purchasing.
+* **Account Management:** Access to personal booking history and profile details.
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+### 🔐 For Administrators:
+* **Content Management:** Full CRUD operations for movies, halls, and projections.
+* **Advanced Analytics:** SQL-driven reports on ticket sales and popular screenings.
+* **System Integrity:** Foreign key constraints to prevent orphaned data (e.g., blocking movie deletion if active projections exist).
