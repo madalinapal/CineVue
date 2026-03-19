@@ -1,10 +1,5 @@
 # CineVue - Cinema Ticket Reservation System
 
-**Author:** Mădălina-Ioana Palade  
-**University:** National University of Science and Technology Politehnica Bucharest  
-**Faculty:** Automatic Control and Computer Science  
-**Course:** Database Systems Project (2026)
-
 ## Project Overview
 CineVue is a full-stack web application designed for managing movie theater operations and online ticket bookings. The project demonstrates the implementation of a relational database in a real-world scenario, covering everything from complex SQL queries to a modern reactive user interface.
 
